@@ -23,5 +23,20 @@ class GalToLitTable {
 				counter = 0; // reset the line counter
 			}
 		}
+
+		// the following code answer problem 11 on
+		// the chapter 1 self test
+		double inches, meters;
+		for(inches = 1; inches <= 50; inches++) {
+			meters = inches * 39.37;
+			System.out.println(inches + " inches is " +
+								meters + " meters.");
+			counter++;
+			// every 12th line/inches, print a blank line
+			if(counter == 12) {
+				System.out.println();
+				counter = 0;
+			}
+		}
 	}
 }
