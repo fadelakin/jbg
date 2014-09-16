@@ -1,10 +1,11 @@
 /*  A program that uses the Vehicle class
 	
 	Call this  file VehicleDemo.java */
-	
+
 // This class declares on object of type Vehicle
 class VehicleDemo {
 	public static void main(String args[]) {
+
 		Vehicle minivan = new Vehicle();
 		int range;
 
