@@ -3,6 +3,13 @@ class Vehicle {
 	int fuelcap;	// fuel capacity in gallons
 	int mpg;		// fuel consumption in miles per gallon
 
+	// add a constructor for Vehicle
+	Vehicle(int p, int f, int m) {
+		passengers = p;
+		fuelcap = f;
+		mpg = m;
+	}
+
 	// Display the range.
 	void range() {
 		System.out.println("Range is " + fuelcap * mpg);
