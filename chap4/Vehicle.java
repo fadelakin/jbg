@@ -10,5 +10,11 @@ class Vehicle {
 
 	int returnRange() {
 		return mpg * fuelcap;
+	}	
+
+	// add parameterized method that computes
+	// the fuel required for a given distance
+	double fuelneeded(int miles) {
+		return (double) miles / mpg;
 	}
 }
