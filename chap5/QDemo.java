@@ -48,7 +48,7 @@ class QDemo {
 			bigQ.put( (char) ('A' + i) );
 
 		// retrieve and display elements from bigQ
-		System.out.print('Contents of bigQ: ');
+		System.out.print("Contents of bigQ: ");
 		for(i=0; i < 26; i++) {
 			ch = bigQ.get();
 			if(ch != (char) 0) System.out.print(ch);
