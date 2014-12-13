@@ -17,3 +17,11 @@ class B extends A {
 		System.out.println("i in subclass: " + i);
 	}
 }
+
+class UseSuper {
+	public static void main(String args[]) {
+		B subOb = new B(1, 2);
+
+		subOb.show();
+	}
+}
