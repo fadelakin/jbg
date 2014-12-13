@@ -5,10 +5,20 @@ class TwoDShape {
 	private double width; // these are
 	private double height; // now private
 
+	// A default constructor.
+	TwoDShape() {
+		width = height = 0.0;
+	}
+
 	// Parameterized constructor.
 	TwoDShape(double w, double h) {
 		width = w;
 		height = h;
+	}
+
+	// Construct ovject with equal width and height
+	TwoDShape(double x) {
+		width = height = x;
 	}
 
 	// Accessor methods for width and height
@@ -26,11 +36,24 @@ class TwoDShape {
 class Triangle extends TwoDShape {
 	String style;
 
+	// A default constructor
+	Triangle() {
+		super();
+		style = "none";
+	}
+
 	// Add a constructor to Triangle
 	Triangle(String s, double w, double h) {
 		super(w, h); // call superclass constructor
 
 		style = s;
+	}
+
+	// One argument constructor
+	Triangle(double x) {
+		super(x); // call superclass constructor
+
+		style = "filled";
 	}
 
 	double area() {
@@ -44,8 +67,11 @@ class Triangle extends TwoDShape {
 
 class Shapes {
 	public static void main(String args[]) {
-		Triangle t1 = new Triangle("filled", 4.0, 4.0);
+		Triangle t1 = new Triangle();
 		Triangle t2 = new Triangle("outlined", 8.0, 12.0);
+		Triangle t3 = new Triangle(4.0);
+
+		t1 = t2;
 
 		System.out.println("Info for t1: ");
 		t1.showStyle();
@@ -58,5 +84,14 @@ class Shapes {
 		t2.showStyle();
 		t2.showDim();
 		System.out.println("Area is " + t2.area());
+
+		System.out.println();
+
+		System.out.println("Info for t3: ");
+		t3.showStyle();
+		t3.showDim();
+		System.out.println("Area is " + t3.area());
+
+		System.out.println();
 	}
 }
