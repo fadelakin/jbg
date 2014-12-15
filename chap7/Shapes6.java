@@ -62,3 +62,20 @@ class Triangle extends TwoDShape {
 		System.out.println("Triangle is " + style);
 	}
 }
+
+// Extend Triangle
+class ColorTriangle extends Triangle {
+	private String color;
+
+	ColorTriangle(String c, String s, double w, double b) {
+		super(s, w, h);
+
+		color = c;
+	}
+
+	String getColor() { return color; }
+
+	void setColor() {
+		System.out.println("Color is " + color);
+	}
+}
