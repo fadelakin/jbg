@@ -1,7 +1,10 @@
+// Try This 7-1
+// 
+// Build a sublcass of Vehicle for trucks
 class Vehicle {
-	int passengers; // number of passengers
-	int fuelcap;	// fuel capacity in gallons
-	int mpg;		// fuel consumption in miles per gallon
+	private int passengers; // number of passengers
+	private int fuelcap;	// fuel capacity in gallons
+	private int mpg;		// fuel consumption in miles per gallon
 
 	// add a constructor for Vehicle
 	Vehicle(int p, int f, int m) {
@@ -24,6 +27,14 @@ class Vehicle {
 	double fuelneeded(int miles) {
 		return (double) miles / mpg;
 	}
+
+	// Accessor methods for instance variables
+	int getPassengers() { return passengers; }
+	void setPassengers(int p) { passengers = p; }
+	int getFuelCap() { return fuelcap; }
+	void setFuelCap(int f) { fuelcap = f; }
+	int getMpg() { return mpg; }
+	void setMpg(int m) { mpg = m; }
 }
 
 // Extend Vehicle to create a Truck specialization
