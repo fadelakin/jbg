@@ -13,3 +13,10 @@ class B extends A {
 		System.out.println("Constructing B.");
 	}
 }
+
+// create another subclass by extending B.
+class C extends B {
+	C() {
+		System.out.println("Constructing C.");
+	}
+}
