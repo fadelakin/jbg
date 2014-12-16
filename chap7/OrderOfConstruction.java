@@ -20,3 +20,9 @@ class C extends B {
 		System.out.println("Constructing C.");
 	}
 }
+
+class OrderOfConstruction {
+	public static void main(String args[]) {
+		C c = new C();
+	}
+}
