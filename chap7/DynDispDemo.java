@@ -11,3 +11,9 @@ class Sub1 extends Sup {
 		System.out.println("who() in Sub1");
 	}
 }
+
+class Sub2 extends Sup {
+	void who() {
+		System.out.println("who() in Sub2");
+	}
+}
